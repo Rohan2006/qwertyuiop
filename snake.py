@@ -94,7 +94,7 @@ class Launcher:
     # Initialise global variables for display properties
     def init(self):
         self.window = pygame.display.set_mode((500, 500))
-        pygame.display.set_caption("Hacktoberfest Snake Game")
+        pygame.display.set_caption("Rohan is awesome")
         self.fps = pygame.time.Clock()
         self.score = 0
 
@@ -123,7 +123,7 @@ class Launcher:
                 if (self.snake.checkCollision()):
                     gameOver()
 
-                pygame.display.set_caption("HacktoberFest Snake Game | Score: " + str(self.score))
+                pygame.display.set_caption("Rohan is awesome | Score: " + str(self.score))
                 pygame.display.flip()
                 self.fps.tick(24)
         except Exception:
